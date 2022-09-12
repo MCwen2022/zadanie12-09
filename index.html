@@ -5,17 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+        }
+        button{
+            background-color: rgb(61, 179, 116);
+            border: 0px;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 24px;
+            margin: 5px;
+            transition: all 0.3s;
+        }
+
+        button:hover{
+            transition: all 0.3s;
+            background-color: rgb(91, 199, 142);
+            transform: scale(1.05);
+        }
+
+        input{
+            display: block;
+            margin: 10px;
+            width: 230px;
+            font-size: 18px;
+            opacity: .9;
+        }
+
+        input:hover{
+            opacity: 1;
+        }
+
+        section{
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <form>
         <input type="text" class="num1">
         <input type="text" class="num2">
 
-        <button class="mnoz">mnożenie</button>
-        <button class="dziel">dzielenie</button>
-        <button class="dod">dodawanie</button>
-        <button class="odej">odejmowanie</button>
+        <button class="mnoz">*</button>
+        <button class="dziel">/</button>
+        <button class="dod">+</button>
+        <button class="odej">-</button>
     </form>
+    <section>
+    </section>
     <script src="main.js"></script> 
 </body>
 </html>

@@ -4,29 +4,30 @@ mnoz = document.querySelector(".mnoz");
 dziel = document.querySelector(".dziel");
 dod = document.querySelector(".dod");
 ode = document.querySelector(".odej");
+sec = document.querySelector("section");
 
 mnoz.addEventListener('click', function(evt) {
     evt.preventDefault();
-    console.log(parseInt(number1.value) * parseInt(number2.value));
+    sec.innerHTML = (parseInt(number1.value) * parseInt(number2.value));
 });
 
 dziel.addEventListener('click', function(evt) {
     evt.preventDefault();
     if(parseInt(number2.value) != 0){
-        console.log(parseInt(number1.value) / parseInt(number2.value));
+        sec.innerHTML = (parseInt(number1.value) / parseInt(number2.value));
     }else{
-        console.log("Nie dziel przez zero");
+        sec.innerHTML = ("Nie dziel przez zero");
     }
     
 });
 
 dod.addEventListener('click', function(evt) {
     evt.preventDefault();
-    console.log(parseInt(number1.value) + parseInt(number2.value));
+    sec.innerHTML = (parseInt(number1.value) + parseInt(number2.value));
 });
 
 ode.addEventListener('click', function(evt) {
     evt.preventDefault();
-    console.log(parseInt(number1.value) - parseInt(number2.value));
+    sec.innerHTML = (parseInt(number1.value) - parseInt(number2.value));
 });
 
